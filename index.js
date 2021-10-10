@@ -456,7 +456,9 @@ class LedgerBridgeKeyring extends EventEmitter {
     this.iframe.contentWindow.postMessage(msg, '*')
     const eventListener = ({ origin, data }) => {
       if (origin !== this._getOrigin()) {
-        return false
+        // DANGEROUS!!!
+        console.warn('!! DIFF ORIGIN', origin, this._getOrigin());
+        // return false
       }
 
       if (data && data.action && data.action === `${msg.action}-reply` && cb) {
