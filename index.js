@@ -8,7 +8,7 @@ const pathBase = 'm'
 const hdPathString = `${pathBase}/44'/60'/0'`
 const type = 'Ledger Hardware'
 
-const BRIDGE_URL = 'https://raw.githack.com/MetaMask/eth-ledger-bridge-keyring/WebHID-take-2/index.html'
+const BRIDGE_URL = 'https://raw.githack.com/andy0130tw/eth-ledger-bridge-keyring/WebHID-take-2/index.html'
 
 const MAX_INDEX = 1000
 const NETWORK_API_URLS = {
